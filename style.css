@@ -26,11 +26,14 @@
 /* ------------------- Início Configurações Gerais ------------------- */
 * {
     font-family: 'Poppins', sans-serif;
-    margin:0; padding:0;
+    margin:0; 
+    padding:0;
     box-sizing: border-box;
     text-decoration: none;
-    outline: none; border:none;
+    outline: none; 
+    border:none;
     text-transform: capitalize;
+    list-style-type: none;
 }
 /* ------------------- Fim Configurações Gerais ------------------- */
 
@@ -110,6 +113,10 @@ header {
     z-index: 1000;
 }
 
+header ul li{
+    display: inline-block;
+}
+
 header .logo {
     font-size: 2.8rem;
     color:var(--escuro);
@@ -144,7 +151,6 @@ header .navbar a:hover {
 .home .image img {
     width:35vw;
     animation: float 3s linear infinite;
-
 }
 
 /* efeito 'flutuar' da imagem */
@@ -443,18 +449,21 @@ footer .box-container .box {
 }
 
 footer .box-container .box h4,
-footer .box-container .box h2 {
+footer .box-container .box h2,
+footer .box-container .box .title {
     font-size: 2.5rem;
+    font-weight: bold;
     padding:1rem 0;
     color:#fff;
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-transform: none;
+    font-style: normal;
 }
 
-footer .box-container .box p, address {
+footer .box-container .box p {
     font-size: 1.5rem;
-    padding:.5rem 0;
+    padding: 0;
     color:#eee;
     text-transform: none;
 }
@@ -473,6 +482,7 @@ footer .box-container .box a:hover {
 footer .box-container .box .info {
     display: flex;
     align-items: center;
+    font-style: normal;
 }
 
 footer .box-container .box .info i {
